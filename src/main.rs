@@ -46,6 +46,10 @@ fn main() {
     // Creating and calling a function.
     println!("{}", is_even(11));
 
+    //  mutability in variables
+    let mut num = 5; // need to use the keyword "mut"
+    num = 3;
+    println!("{}", num)
 }
 
 pub fn is_even(num: u8) -> bool {
