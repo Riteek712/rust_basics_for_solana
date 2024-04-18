@@ -55,6 +55,19 @@ fn main() {
     let arr1 = [0, 1, 2, 3];
     let slice =  &arr1[1..3];
     borrowing_slice(arr1, slice);
+
+    // strings
+    let str: &str = "hello world";
+    let mut string: String = String::from("namaste world"); // Now this is equivalent to a vector, dynamic size array where we can append or remove the contents.
+
+    let slice2 = &string[.. 6];
+    println!("slice2: {:?}", slice2);
+
+    string.push('1');
+    string.push_str("! Bob");
+    string = string.replace("nam", "xxx");
+    println!("{}", string);
+
 }
 
 pub fn is_even(num: u8) -> bool {
