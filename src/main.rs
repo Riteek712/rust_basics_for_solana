@@ -43,5 +43,12 @@ fn main() {
     // destructuring
     println!("first: {}, second: {}, third: {}", a, b, c);
 
+    // Creating and calling a function.
+    println!("{}", is_even(11));
 
+}
+
+pub fn is_even(num: u8) -> bool {
+    let digit: u8 = num % 2;
+    digit == 0 // by not giving ; we are returning the output of {digit == 0}.
 }
