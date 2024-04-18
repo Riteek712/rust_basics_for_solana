@@ -49,10 +49,22 @@ fn main() {
     //  mutability in variables
     let mut num = 5; // need to use the keyword "mut"
     num = 3;
-    println!("{}", num)
+    println!("{}", num);
+
+    //Array and slices 
+    let arr1 = [0, 1, 2, 3];
+    let slice =  &arr1[1..3];
+    borrowing_slice(arr1, slice);
 }
 
 pub fn is_even(num: u8) -> bool {
     let digit: u8 = num % 2;
     digit == 0 // by not giving ; we are returning the output of {digit == 0}.
+}
+
+fn borrowing_slice(arr: [u8;4], slice: &[u8]){
+    println!("{:?}", arr);
+    println!("{:?}", slice);
+    println!("length: {}", slice.len());
+    println!("{} {}", slice[0], slice[1]);
 }
