@@ -23,4 +23,12 @@ fn main() {
     let is_true : bool = true;
     println!("letter: {} emoji: {} isTrue: {}", letter, emoji, is_true);
 
+    // arrays
+    let arr: [u8; 3] = [1, 2, 3];
+    let other_arr: [u8; 5] = [100; 5] ; // all the elements in the array will be 100.
+
+    println!("index: {}, length: {}",arr[0], other_arr.len());
+
+    // print structure of the array and other objects.
+    println!("{:?}", other_arr);
 }
