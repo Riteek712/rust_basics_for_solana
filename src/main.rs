@@ -84,6 +84,16 @@ fn main() {
         println!("{}", i); // prints value from 0 to 5
     }
 
+    let mut j = 0 ;
+    while j < 4 {
+        println!("{}", j);
+        j+=1;
+        if j ==3 {
+            println!("exit");
+            continue;
+        }
+    }
+
 }
 
 pub fn is_even(num: u8) -> bool {
