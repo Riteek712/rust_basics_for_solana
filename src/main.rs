@@ -79,6 +79,11 @@ fn main() {
         println!("equal to 0")
     }
 
+    // For loops
+    for i in 0..6{
+        println!("{}", i); // prints value from 0 to 5
+    }
+
 }
 
 pub fn is_even(num: u8) -> bool {
