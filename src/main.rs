@@ -68,6 +68,17 @@ fn main() {
     string = string.replace("nam", "xxx");
     println!("{}", string);
 
+
+    // Conditional statements
+    let n =3 ;
+    if n > 0 {
+        println!("grater than 0")
+    }else if n < 0 {
+        println!("less than 0")
+    }else{
+        println!("equal to 0")
+    }
+
 }
 
 pub fn is_even(num: u8) -> bool {
