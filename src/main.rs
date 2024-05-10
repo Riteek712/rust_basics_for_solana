@@ -94,6 +94,14 @@ fn main() {
         }
     }
 
+    // Match or switch case
+    match j {
+        0 => println!("0"),
+        1 | 2 => println!("1, 2"),
+        3..=4 => println!("3, 4"),
+        _ => println!("default!")
+    }
+
 }
 
 pub fn is_even(num: u8) -> bool {
