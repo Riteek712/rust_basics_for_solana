@@ -68,6 +68,40 @@ fn main() {
     string = string.replace("nam", "xxx");
     println!("{}", string);
 
+
+    // Conditional statements
+    let n =3 ;
+    if n > 0 {
+        println!("grater than 0")
+    }else if n < 0 {
+        println!("less than 0")
+    }else{
+        println!("equal to 0")
+    }
+
+    // For loops
+    for i in 0..6{
+        println!("{}", i); // prints value from 0 to 5
+    }
+
+    let mut j = 0 ;
+    while j < 4 {
+        println!("{}", j);
+        j+=1;
+        if j ==3 {
+            println!("exit");
+            continue;
+        }
+    }
+
+    // Match or switch case
+    match j {
+        0 => println!("0"),
+        1 | 2 => println!("1, 2"),
+        3..=4 => println!("3, 4"),
+        _ => println!("default!")
+    }
+
 }
 
 pub fn is_even(num: u8) -> bool {
